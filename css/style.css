@@ -243,18 +243,7 @@ footer {
     border-color: transparent;
 }
 
-@media(min-width:768px) {
-    .custom-navbar {
-        padding: 20px 0;
-        border-bottom: 0;
-        background: 0 0; 
-    }
-    .custom-navbar.top-nav-collapse {
-        background: #101010;
-        padding: 0;
-    }
 
-}
 
 
 
@@ -672,7 +661,7 @@ footer {
 /*---------------------------------------
    Responsive styles            
 -----------------------------------------*/
-@media (max-width: 980px) {
+/* @media (max-width: 980px) {
 
   p {font-size: 13px;}
 
@@ -696,9 +685,30 @@ footer {
   padding: 10rem 3rem 10rem 5rem;
 }
 
-}
+} */
+
+
+/**For mobile devices */
 
 @media (max-width: 768px) {
+
+  #intro {
+    background: url('../images/intro-bg3.jpg') 50% 0 repeat-y fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -webkit-flex;
+     display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+     -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+    height: 100vh;
+    text-align: center;
+}
 
   .custom-navbar .navbar-brand {
     line-height: 20px;
@@ -728,11 +738,55 @@ footer {
 
 }
 
-@media (max-width: 760px) {
+/* @media (max-width: 760px) {
 
   #intro {
     height: 100vh;
   }
 
+} */
+
+
+
+@media(min-width:768px) {
+  .custom-navbar {
+      padding: 20px 0;
+      border-bottom: 0;
+      background: 0 0; 
+  }
+  .custom-navbar.top-nav-collapse {
+      background: #101010;
+      padding: 0;
+  }
+
 }
 
+ @media(min-width:768px) and (max-width:992px) {
+ 
+#intro h3 {
+
+  padding-top:25%;
+}
+
+#intro .btn,
+#contact .btn {
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 0px;
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 14px 22px;
+    margin-top: 22px;
+    margin-right: 12px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+#intro .btn-danger,
+#contact .btn-danger {
+    background: #f2545f;
+    border-color: transparent;
+}
+} 
