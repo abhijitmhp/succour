@@ -198,9 +198,9 @@ footer {
 }
 
 .custom-navbar .navbar-brand {
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 3rem;
+    color: yellow;
+    font-weight: 400;
+    font-size: 2.5rem;
     line-height: 40px;
 }
 
@@ -693,7 +693,7 @@ footer {
 @media (max-width: 768px) {
 
   #intro {
-    background: url('../images/intro-bg3.jpg') 50% 0 repeat-y fixed;
+    background: url('../images/intro-bg4.jpg') 50% 0 repeat-y fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -708,6 +708,15 @@ footer {
           align-items: center;
     height: 100vh;
     text-align: center;
+}
+
+
+.navbar-header{
+  background: rgb(0,32,96);
+  color: yellow;
+  font-size:1.5rem;
+
+
 }
 
 #intro .btn,
@@ -777,7 +786,7 @@ footer {
       background: 0 0; 
   }
   .custom-navbar.top-nav-collapse {
-      background: #101010;
+      background: rgb(0,32,96);
       padding: 0;
   }
 
