@@ -26,7 +26,9 @@
     <style> 
         .card{
 		  width:100%;
-		  height:100% !important;
+          height:100% !important;
+          max-height: 450px;
+    overflow-y: scroll;
 		}
         .image-grid-container { 
             display: grid; 
@@ -61,6 +63,18 @@
 .active {
   background-color: #4CAF50;
 }
+
+
+@media (max-width: 768px) {
+    .image-grid-container { 
+            display: grid; 
+              
+            /* For 3 columns */ 
+            grid-template-columns: auto auto auto ; 
+			
+        } 
+}
+
     </style> 
 </head>  
   
@@ -74,7 +88,19 @@
   <a href="#"><i class="fa fa-globe"></i></a>
   <a href="#"><i class="fa fa-trash"></i></a> 
 </div>
-	
+
+<div class="row">
+    <div class="col-sm-6">
+    <h5 style="padding:2px;">Choose among programing :</h5>
+    </div>
+    <div class="col-sm-5" style="text-align:right; ">
+<button style="margin:2px;" class="btn btn-primary">Skip</button>
+</div>
+
+<div class="col-sm-1" style="text-align:right; ">
+        <button style="margin:2px;" class="btn btn-warning">Next</button>
+        </div>
+</div>
         <div class="card"> 
 		
             <div class="image-grid-container"> 
@@ -94,7 +120,14 @@
 "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"> 
                 <img src= 
 "https://media.geeksforgeeks.org/wp-content/uploads/20200120152724/gfg_icon.png"> 
-               
+<img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20200120152724/gfg_icon.png"> 
+<img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20200120152724/gfg_icon.png"> 
+<img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20200120152724/gfg_icon.png"> 
+<img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20200120152724/gfg_icon.png"> 
             </div>  
            
         </div> 
