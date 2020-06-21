@@ -1,152 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Simple Login Form with Blue Background</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<link rel="stylesheet" href="enroll.css">
 
-	<title>Enroll Expert</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<style type="text/css">
+	body {
+		color: #fff;
+		background: #3598dc;
+	}
+	.form-control {
+		min-height: 41px;
+		background: #f2f2f2;
+		box-shadow: none !important;
+		border: transparent;
+	}
+	.form-control:focus {
+		background: #e2e2e2;
+	}
+	.form-control, .btn {        
+        border-radius: 2px;
+    }
+	.login-form {
+		width: 350px;
+		margin: 30px auto;
+		text-align: center;
+	}
+	.login-form h2 {
+        margin: 10px 0 25px;
+    }
+    .login-form form {
+		color: #7a7a7a;
+		border-radius: 3px;
+    	margin-bottom: 15px;
+        background: #fff;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+    .login-form .btn {        
+        font-size: 16px;
+        font-weight: bold;
+		background: #3598dc;
+		border: none;
+        outline: none !important;
+    }
+	.login-form .btn:hover, .login-form .btn:focus {
+		background: #2389cd;
+	}
+	.login-form a {
+		color: #fff;
+		text-decoration: underline;
+	}
+	.login-form a:hover {
+		text-decoration: none;
+	}
+	.login-form form a {
+		color: #7a7a7a;
+		text-decoration: none;
+	}
+	.login-form form a:hover {
+		text-decoration: underline;
+	}
+/* Social media icons CSS*/
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/owl.theme.css">
-	<link rel="stylesheet" href="css/owl.carousel.css">
-
-	<!-- Main css -->
-	<link rel="stylesheet" href="css/contactstyle.css">
-
-	<!-- Google Font -->
-	<link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>
-
-	<!-- Font Icon -->
-	<link rel="stylesheet" href="signupfonts/material-icon/css/material-design-iconic-font.min.css">
-
+</style>
 </head>
-
 <body>
-
-
-
-	<!-- =========================
-     NAVIGATION LINKS     
-============================== -->
-
-
-
-	<!-- =========================
-    INTRO SECTION   
-============================== -->
-
-
-
-	<!-- =========================
-    CONTACT SECTION   
-============================== -->
-	<section id="contact" class="parallax-section">
-		<div class="container">
-			<div class="row">
-
-				<div class="wow fadeInUp col-md-offset-1 col-md-5 col-sm-6 hidden-xs">
-					<div class="contact_des">
-						<h3>Tecxpert Enrollment</h3>
-							<!-- TODO: Change the text here -->
-						<p>Proin sodales convallis urna eu condimentum. Morbi tincidunt augue eros, vitae pretium mi
-							condimentum eget. Suspendisse eu turpis sed elit pretium congue.</p>
-						<p>Mauris at tincidunt felis, vitae aliquam magna. Sed aliquam fringilla vestibulum. Praesent
-							ullamcorper mauris fermentum turpis scelerisque rutrum eget eget turpis.</p>
-
-					
-						
-					</div>
-
-					
-				</div>
-
-				<div class="wow fadeInUp col-md-5 col-sm-6">
-					<div class="contact_detail">
-						<div class="section-title">
-							<h2>ENROLL AS AN EXPERT</h2>
-						</div>
-					
-
-							<input name="email" type="email" class="form-control" id="email" placeholder="Email">
-							<input name="password" type="text" class="form-control" id="password"
-								placeholder="Password">
-							<input name="confirm-password" type="text" class="form-control" id="confirm-password"
-								placeholder="Confirm Password">
-
-							<a href="grid.html">
-								<input name="submit" type="submit" class="form-control" id="submit" value="ENROLL">
-							</a>
-							
+<div class="login-form">
+    <form action="grid.html">
+		<h2 class="text-center">Enroll as an Expert</h2>
+		<div class="form-group has-error">
+				<input type="text" class="form-control" name="name" placeholder="Name" required="required">
+			</div>   
+        <div class="form-group has-error">
+        	<input type="text" class="form-control" name="email" placeholder="Email" required="required">
+        </div>
+		<div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+		</div>   
+		<div class="form-group">
+				<input type="password" class="form-control" name="password" placeholder="Retype Password"
+				 required="required">
+			</div>      
+        <div class="form-group">
+			<a href="grid.html">
+			<button type="submit" class="btn btn-primary btn-lg btn-block">Enroll</button>
+			</a>
+		</div>
 		
-									<ul class="social-icon" style="text-align: right">
-											<li>Or login using :</li>
-										<li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="1s"></a></li>
-										<li><a href="#" class="fa fa-github wow fadeInUp" data-wow-delay="1.3s"></a></li>
-										
-										<li><a href="#" class="fa fa-google-plus wow fadeInUp" data-wow-delay="2s"></a></li>
-									</ul>
-				
-							
-						
-					</div>
+		<!--Social media icons-->
+		<div class="row">
+				<h5>Alternatively login with : </h5>
+				<div>
+				  <ul class="social-network social-circle">
 					
-					<br/>
-
-
-					
+					<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google"></i></a></li>
+				   
+				  </ul>
 				</div>
+			  </div>
 
-			</div>
-		</div>
-	</section>
-
-
-	<!-- =========================
-    FOOTER SECTION   
-============================== -->
-<footer>
-		<div class="container">
-			<div class="row">
-	
-				<div class="col-md-12 col-sm-12">
-					<p class="wow fadeInUp" data-wow-delay="0.6s">Copyright &copy; 2016 Your Company 
-						
-						</p>
-	
-					<ul class="social-icon">
-						<li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="1s"></a></li>
-						<li><a href="#" class="fa fa-twitter wow fadeInUp" data-wow-delay="1.3s"></a></li>
-						<li><a href="#" class="fa fa-dribbble wow fadeInUp" data-wow-delay="1.6s"></a></li>
-						<li><a href="#" class="fa fa-behance wow fadeInUp" data-wow-delay="1.9s"></a></li>
-						<li><a href="#" class="fa fa-google-plus wow fadeInUp" data-wow-delay="2s"></a></li>
-					</ul>
-	
-				</div>
-				
-			</div>
-		</div>
-	</footer>
-
-
-
-
-	<!-- =========================
-     SCRIPTS   
-============================== -->
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.parallax.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/smoothscroll.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/custom.js"></script>
-
+      
+    </form>
+    <p class="text-center small">Already have an account? <a href="#">Login here!</a></p>
+</div>
 </body>
-
 </html>
