@@ -20,17 +20,26 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
     </script>
     <style>
+
+body{
+    background: #133544;;
+	}
+
+    .card{
+
+        border:none;
+    }
         .grid-content {
             width: 100%;
             height: 100% !important;
-            max-height: 450px;
-            overflow-y: scroll;
+            max-height: 600px;
+            
         }
 
         .text-section {
             display: grid;
             /* For 3 columns */
-            grid-template-columns: auto auto auto;
+            grid-template-columns: auto auto auto auto;
         }
 
         .image-grid-container {
@@ -38,17 +47,32 @@
 
             /* For 3 columns */
             grid-template-columns: auto auto auto auto;
+            background-color: #132644;
+            border: none;
+        }
+        .image-grid-container div{
+            padding:2%; text-align: center;
+        }
 
+        .image-grid-container img{
+           width:200px;height:200px;
         }
 
         img {
-            width: 100%;
+           /* width: 100%;*/
+            object-fit:cover;
         }
 
         .icon-bar {
             width: 100%;
-            background-color: #555;
+            background-color: #132644;
             overflow: auto;
+          
+        }
+
+        h6{
+            color:white;
+
         }
 
         .icon-bar a {
@@ -75,7 +99,7 @@
                 display: grid;
 
                 /* For 3 columns */
-                grid-template-columns: auto auto auto;
+                grid-template-columns: auto auto ;
 
             }
         }
@@ -86,51 +110,45 @@
     <div class="container">
 
         <div class="icon-bar">
-            <a class="active" href="#"><i class="fa fa-home"></i><span class="badge">4</span></a>
-            <a href="#"><i class="fa fa-search"></i></a>
-            <a href="#"><i class="fa fa-envelope"></i></a>
-            <a href="#"><i class="fa fa-globe"></i></a>
-            <a href="#"><i class="fa fa-trash"></i></a>
+            
+            <a href="#"><p style="font-size:25px;padding-left: 5px;">Programming</p></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"><i class="fa fa-arrow-left"></i></a>
+            <a href="payment.html"><i class="fa fa-arrow-right"></i></a>
+            
         </div>
 
-        <div class="text-section">
-
-            <h6 style="padding:2px;">Choose among programing :</h6>
-
-            <button style="margin:2px;background: gray;color:#ffffff;" class="btn btn-primary">Skip</button>
-
-            <button style="margin:2px;" class="btn btn-warning">Next</button>
-
-        </div>
+     
         <div class="card grid-content">
 
             <div class="image-grid-container">
-                <div style="text-align: center;padding:0.5%">
-                    <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
+                <div  >
+                    <img src="images/nodejs.jpg" >
                     <h6>500 experts</h6>
                 </div>
                 <div>
-                    <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
+                        <img src="images/python.JPG" >
                     <h6>500 experts</h6>
                 </div>
                 <div>
-                    <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
+                    <img src="images/cplus.JPG">
                     <h6>500 experts</h6>
                 </div>
                 <div>
-                    <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
+                        <img src="images/cplus.JPG">
                     <h6>500 experts</h6>
                 </div>
                 <div>
-                    <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
+                        <img src="images/cplus.JPG">
                     <h6>500 experts</h6>
                 </div>
                 <div>
-                    <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
+                        <img src="images/cplus.JPG">
                     <h6>500 experts</h6>
                 </div>
                 <div>
-                    <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
+                        <img src="images/cplus.JPG">
                     <h6>500 experts</h6>
                 </div>
                 <div>

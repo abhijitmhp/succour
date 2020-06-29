@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Payment</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+
+<style type="text/css">
+	body{
+		background-color: #25274d;
+	}
+	.contact{
+		padding: 4%;
+		height: 400px;
+	}
+	.col-md-3{
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2c539e+0,355a99+100 */
+   background: rgb(44,83,158); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(44,83,158,1) 0%, rgba(53,90,153,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(44,83,158,1) 0%,rgba(53,90,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(44,83,158,1) 0%,rgba(53,90,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c539e', endColorstr='#355a99',GradientType=0 ); /* IE6-9 */
+color:cornsilk;
+		padding: 4%;
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+	}
+	.contact-info{
+		margin-top:10%;
+	}
+	.contact-info img{
+		margin-bottom: 15%;
+	}
+	.contact-info h2{
+		margin-bottom: 10%;
+	}
+	.col-md-9{
+		background: #fff;
+		padding: 3%;
+		border-top-right-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+	}
+	.contact-form label{
+		font-weight:600;
+	}
+	.contact-form button{
+		background: #25274d;
+		color: #fff;
+		font-weight: 600;
+		width: 25%;
+	}
+	.contact-form button:focus{
+		box-shadow:none;
+	}
+</style>
+</head>
+<body>
+        <div class="container contact">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="contact-info">
+                           
+                            <h3 style="color:yellow"><i class="fa fa-usd"></i>  Pricing</h3>
+                            <h4> You get to set your own pricing! </h4>
+                                <br/>
+                               <h6> Set your own charge/price per hour or per minute based on the support you want to provide.</h6>
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="contact-form">
+                            <div class="form-group">
+                              <label class="control-label col-sm-4" for="fname">Set your free minutes</label>
+                              <div class="col-sm-8">          
+                                <input type="number" class="form-control" id="fname" placeholder="Number of minutes you want to serve for free" name="fname">
+                             <h6 style="color: #9b9797;font-size:13px;">Specify the minutes for which you are going to provide assistance to people on your expertise for free.
+                            (Min 15 min)</h6>
+                            </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-sm-5" for="lname">Set your rate time and currency:</label>
+                              <div class="col-sm-7"> 
+                                    <div class="row"> 
+                                  <div class="col-sm-4"><p>Your rate</p><input type="number" class="form-control"  placeholder="Rate" ></div>
+                                  <div class="col-sm-4"><p>Rate per mins</p><input type="text" class="form-control"  placeholder="Per Mins" ></div>
+                                  <div class="col-sm-4"><p>Currency(US $)</p><input type="text" class="form-control"  placeholder="Currency" ></div>      
+                                </div>
+                                <h6 style="color: #9b9797;font-size:13px;">Specify the minutes for which you are going to charge an amount from the technology help seekers.
+                                        (Minutes beyond expiration of free mins)</h6>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-sm-4" for="email">Payment redemption method</label>
+                              <div class="col-sm-8">
+                              <input type="checkbox"> Credit Card 
+                              <input type="checkbox"> Pay Pal 
+                              <br/>
+                              <h6 style="color: #9b9797;font-size:13px;">Please select the mode of receving payment againsts your credit points. For security reasons, we do not store your card details or your PayPal account details.
+                                We offer you credits which you can redeem and encash using your credit / debit card from the redeem section under settings in your profile.</h6>
+                              </div>
+                            </div>
+                          
+                            <div class="form-group">        
+                              <div class="col-sm-offset-2 col-sm-10">
+                                <a href="profile.html">
+                                <button type="submit" class="btn btn-default">Continue</button>
+                                </a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
